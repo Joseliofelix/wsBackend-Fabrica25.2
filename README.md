@@ -50,7 +50,8 @@ cd LojaFake
 ### 2. Crie e ative o ambiente virtual
 ```bash
 python -m venv venv # Windows
-venv\Scripts\activate 
+venv\Scripts\activate # windows
+
 source venv/bin/activate # Linux / Mac
 ```
 ### 3. Instale as dependências
@@ -73,18 +74,18 @@ A API estará disponível em http://127.0.0.1:8000/
 
 ## 🌐 Endpoints da API
 
-Endpoint	                Método	                            Descrição
+| Endpoint                |       Método         |                     Descrição                      |
+|-------------------------|----------------------|----------------------------------------------------|
+| ``/api/categorias/`     | `GET / POST`         |  Listar todas as categorias ou criar nova.         |
+| `/api/categorias/{id}/` | `GET / PUT / DELETE` |  Ver detalhes, atualizar ou deletar categoria.     |
+| `/api/produtos/`        | `GET / POST`         |  Listar todos os produtos ou criar novo produto.   |
+| `/api/produtos/{id}/`   | `GET / PUT / DELETE` | Ver detalhes, atualizar ou deletar produto.        |
+| ``/api/importar/`       | `POST`               | Importa produtos da Fake Store API automaticamente.|
 
-`/api/categorias/`	      GET / POST	        Lista todas as categorias ou cria uma nova categoria.
-`/api/categorias/{id}/`	  GET / PUT /DELETE	    Ver detalhes, atualiza ou deleta uma categoria específica.
-`/api/produtos/`	      GET / POST	        Lista todos os produtos ou cria um novo produto.
-`/api/produtos/{id}/`	  GET / PUT /DELETE	    Ver detalhes, atualiza ou deleta um produto específico.
-`/api/importar/`	         POST	            Importa produtos da Fake Store API automaticamente.
 
 ## 💡 Você pode acessar os endpoints diretamente no navegador.
 
 Para `/api/importar/,`  #os produtos serão importados ou atualizados automaticamente.
-
 
 ## 📌 Exemplos de uso
 
