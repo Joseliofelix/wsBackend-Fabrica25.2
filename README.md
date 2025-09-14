@@ -27,7 +27,7 @@ Permite gerenciar **categorias**, **produtos** e importar produtos automaticamen
 
 ```text
 Projeto/
-├─ produtos/
+├─ produto/
 │ ├─ models.py      # Modelos Categoria e Produto
 │ ├─ serializers.py # Serializers para API
 │ ├─ views.py       # ViewSets e endpoint de importação
@@ -45,7 +45,7 @@ Projeto/
 
 ```bash
 git clone < https://github.com/Joseliofelix/wsBackend-Fabrica25.2 >
-cd LojaFake
+cd Projeto
 ```
 ### 2. Crie e ative o ambiente virtual
 ```bash
@@ -76,10 +76,10 @@ A API estará disponível em http://127.0.0.1:8000/
 
 | Endpoint                |       Método         |                     Descrição                      |
 |-------------------------|----------------------|----------------------------------------------------|
-| `/api/categorias/`      | `GET / POST`         |  Listar todas as categorias ou criar nova.         |
-| `/api/categorias/{id}/` | `GET / PUT / DELETE` |  Ver detalhes, atualizar ou deletar categoria.     |
-| `/api/produtos/`        | `GET / POST`         |  Listar todos os produtos ou criar novo produto.   |
-| `/api/produtos/{id}/`   | `GET / PUT / DELETE` | Ver detalhes, atualizar ou deletar produto.        |
+| `/api/categorias/`      | `GET / POST`         | Lista todas as categorias ou cria uma nova.        |
+| `/api/categorias/{id}/` | `GET / PUT / DELETE` | Ver detalhes, atualiza ou deleta categoria.        |
+| `/api/produtos/`        | `GET / POST`         | Lista todos os produtos ou cria um novo produto.   |
+| `/api/produtos/{id}/`   | `GET / PUT / DELETE` | Ver detalhes, atualiza ou deleta produto.          | 
 | `/api/importar/`        | `POST`               | Importa produtos da Fake Store API automaticamente.|
 
 
