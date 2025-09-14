@@ -76,11 +76,11 @@ A API estará disponível em http://127.0.0.1:8000/
 
 | Endpoint                |       Método         |                     Descrição                      |
 |-------------------------|----------------------|----------------------------------------------------|
-| ``/api/categorias/`     | `GET / POST`         |  Listar todas as categorias ou criar nova.         |
+| `/api/categorias/`      | `GET / POST`         |  Listar todas as categorias ou criar nova.         |
 | `/api/categorias/{id}/` | `GET / PUT / DELETE` |  Ver detalhes, atualizar ou deletar categoria.     |
 | `/api/produtos/`        | `GET / POST`         |  Listar todos os produtos ou criar novo produto.   |
 | `/api/produtos/{id}/`   | `GET / PUT / DELETE` | Ver detalhes, atualizar ou deletar produto.        |
-| ``/api/importar/`       | `POST`               | Importa produtos da Fake Store API automaticamente.|
+| `/api/importar/`        | `POST`               | Importa produtos da Fake Store API automaticamente.|
 
 
 ## 💡 Você pode acessar os endpoints diretamente no navegador.
